@@ -1,219 +1,217 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>블로그 | 마포 서버 웜업 백링크 자동화 전문</title>
-    <meta name="description" content="마포 No.1 서버 웜업 & 백링크 자동화 프로그램. PBN 운영자들이 인정한 RAW한 성능. 전화 010-6279-0862. 지금 바로 웜업 시작하라.">
-    <meta name="keywords" content="백링크 자동화, 서버 웜업, PBN, 백링크 프로그램, 마포 백링크, 서버 웜업 프로그램, 백링크 자동화 툴, PBN 서버 관리">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <link rel="canonical" href="https://sf-t3-1779642675702-377.maphoshirts.xyz/blog.html">
-    <meta property="og:title" content="블로그 | 마포 서버 웜업 백링크 자동화 전문">
-    <meta property="og:description" content="마포 No.1 서버 웜업 &amp; 백링크 자동화 프로그램. PBN 운영자들이 인정한 RAW한 성능. 전화 010-6279-0862. 지금 바로 웜업 시작하라.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sf-t3-1779642675702-377.maphoshirts.xyz/blog.html">
-    <meta name="robots" content="index, follow">
-    <style>
-        /* RESET & BASE */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Arial Black', 'Impact', 'Franklin Gothic Heavy', sans-serif;
-            background: #0a0a0a;
-            color: #e0e0e0;
-            line-height: 1.4;
-            min-height: 100vh;
-        }
-        /* TYPOGRAPHY - oversized & raw */
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            color: #f0f0f0;
-        }
-        h1 {
-            font-size: clamp(2.5rem, 8vw, 5rem);
-            line-height: 0.9;
-            margin-bottom: 1rem;
-        }
-        h2 {
-            font-size: clamp(2rem, 6vw, 3.5rem);
-            margin-bottom: 0.75rem;
-        }
-        h3 {
-            font-size: clamp(1.5rem, 4vw, 2.5rem);
-            margin-bottom: 0.5rem;
-        }
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            line-height: 1.5;
-        }
-        a {
-            color: #ff3333;
-            text-decoration: none;
-            border-bottom: 2px solid transparent;
-            transition: border-color 0.2s;
-        }
-        a:hover {
-            border-bottom-color: #ff3333;
-        }
-        strong {
-            color: #ffffff;
-        }
-        /* LAYOUT - full bleed, asymmetric */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        /* 네비게이션 */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 1.5rem;
-            background: #111;
-            border-bottom: 2px solid #ff3333;
-        }
-        nav .logo {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: #fff;
-        }
-        nav .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        nav .nav-links li a {
-            font-size: 1rem;
-            text-transform: uppercase;
-            border-bottom: none;
-        }
-        nav .nav-links li a:hover {
-            color: #fff;
-        }
-        /* 햄버거 메뉴 - 모바일 */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 4px;
-        }
-        .hamburger span {
-            width: 28px;
-            height: 3px;
-            background: #fff;
-            transition: 0.3s;
-        }
-        @media (max-width: 768px) {
-            nav .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                right: 1.5rem;
-                background: #111;
-                padding: 1rem;
-                border: 2px solid #ff3333;
-                width: 200px;
-            }
-            nav .nav-links.active {
-                display: flex;
-            }
-            .hamburger {
-                display: flex;
-            }
-        }
-        /* 히어로 (블로그 헤더) */
-        .blog-hero {
-            padding: 4rem 0 2rem;
-            border-bottom: 2px solid #333;
-        }
-        .blog-hero h1 {
-            font-size: clamp(2rem, 6vw, 4rem);
-            color: #ff3333;
-        }
-        /* 메인 콘텐츠 */
-        .main-content {
-            padding: 3rem 0;
-        }
-        .post {
-            background: #151515;
-            border: 2px solid #282828;
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-        .post h2 {
-            color: #ff6b6b;
-        }
-        .post .meta {
-            font-size: 0.9rem;
-            color: #888;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-        }
-        .post p {
-            margin-bottom: 1rem;
-        }
-        .post blockquote {
-            border-left: 4px solid #ff3333;
-            padding-left: 1rem;
-            font-style: italic;
-            color: #ccc;
-            margin: 1.5rem 0;
-        }
-        /* FAQ 섹션 */
-        .faq {
-            padding: 3rem 0;
-            background: #0f0f0f;
-        }
-        .faq-item {
-            border-bottom: 1px solid #222;
-            padding: 1.5rem 0;
-        }
-        .faq-item h3 {
-            font-size: 1.3rem;
-            cursor: pointer;
-            color: #ff6666;
-        }
-        .faq-item p {
-            margin-top: 0.5rem;
-        }
-        /* 푸터 */
-        footer {
-            background: #111;
-            border-top: 2px solid #ff3333;
-            padding: 2rem 1.5rem;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-        footer .tel-link {
-            display: inline-block;
-            margin-top: 0.5rem;
-            font-size: 1.2rem;
-            color: #ff3333;
-            font-weight: 900;
-        }
-        /* 반응형 여백 */
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 1rem;
-            }
-            .post {
-                padding: 1rem;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>블로그 | 마포 서버 웜업 백링크 자동화 전문</title>
+ <meta name="description" content="마포 No.1 서버 웜업 & 백링크 자동화 프로그램. PBN 운영자들이 인정한 RAW한 성능. 지금 바로 웜업 시작하라.">
+ <meta name="keywords" content="백링크 자동화, 서버 웜업, PBN, 백링크 프로그램, 마포 백링크, 서버 웜업 프로그램, 백링크 자동화 툴, PBN 서버 관리">
+ <link rel="canonical" href="https://sf-t3-1779642675702-377.maphoshirts.xyz/blog.html">
+ <meta property="og:title" content="블로그 | 마포 서버 웜업 백링크 자동화 전문">
+ <meta property="og:description" content="마포 No.1 서버 웜업 &amp; 백링크 자동화 프로그램. PBN 운영자들이 인정한 RAW한 성능. 지금 바로 웜업 시작하라.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://sf-t3-1779642675702-377.maphoshirts.xyz/blog.html">
+ <meta name="robots" content="index, follow">
+ <style>
+ /* RESET & BASE */
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: 'Arial Black', 'Impact', 'Franklin Gothic Heavy', sans-serif;
+ background: #0a0a0a;
+ color: #e0e0e0;
+ line-height: 1.4;
+ min-height: 100vh;
+ }
+ /* TYPOGRAPHY - oversized & raw */
+ h1, h2, h3, h4, h5, h6 {
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ color: #f0f0f0;
+ }
+ h1 {
+ font-size: clamp(2.5rem, 8vw, 5rem);
+ line-height: 0.9;
+ margin-bottom: 1rem;
+ }
+ h2 {
+ font-size: clamp(2rem, 6vw, 3.5rem);
+ margin-bottom: 0.75rem;
+ }
+ h3 {
+ font-size: clamp(1.5rem, 4vw, 2.5rem);
+ margin-bottom: 0.5rem;
+ }
+ p {
+ font-size: 1.1rem;
+ margin-bottom: 1rem;
+ line-height: 1.5;
+ }
+ a {
+ color: #ff3333;
+ text-decoration: none;
+ border-bottom: 2px solid transparent;
+ transition: border-color 0.2s;
+ }
+ a:hover {
+ border-bottom-color: #ff3333;
+ }
+ strong {
+ color: #ffffff;
+ }
+ /* LAYOUT - full bleed, asymmetric */
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 1.5rem;
+ }
+ /* 네비게이션 */
+ nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1rem 1.5rem;
+ background: #111;
+ border-bottom: 2px solid #ff3333;
+ }
+ nav .logo {
+ font-size: 1.5rem;
+ font-weight: 900;
+ color: #fff;
+ }
+ nav .nav-links {
+ display: flex;
+ gap: 2rem;
+ list-style: none;
+ }
+ nav .nav-links li a {
+ font-size: 1rem;
+ text-transform: uppercase;
+ border-bottom: none;
+ }
+ nav .nav-links li a:hover {
+ color: #fff;
+ }
+ /* 햄버거 메뉴 - 모바일 */
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 4px;
+ }
+ .hamburger span {
+ width: 28px;
+ height: 3px;
+ background: #fff;
+ transition: 0.3s;
+ }
+ @media (max-width: 768px) {
+ nav .nav-links {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 60px;
+ right: 1.5rem;
+ background: #111;
+ padding: 1rem;
+ border: 2px solid #ff3333;
+ width: 200px;
+ }
+ nav .nav-links.active {
+ display: flex;
+ }
+ .hamburger {
+ display: flex;
+ }
+ }
+ /* 히어로 (블로그 헤더) */
+ .blog-hero {
+ padding: 4rem 0 2rem;
+ border-bottom: 2px solid #333;
+ }
+ .blog-hero h1 {
+ font-size: clamp(2rem, 6vw, 4rem);
+ color: #ff3333;
+ }
+ /* 메인 콘텐츠 */
+ .main-content {
+ padding: 3rem 0;
+ }
+ .post {
+ background: #151515;
+ border: 2px solid #282828;
+ padding: 2rem;
+ margin-bottom: 2rem;
+ }
+ .post h2 {
+ color: #ff6b6b;
+ }
+ .post .meta {
+ font-size: 0.9rem;
+ color: #888;
+ margin-bottom: 1.5rem;
+ text-transform: uppercase;
+ }
+ .post p {
+ margin-bottom: 1rem;
+ }
+ .post blockquote {
+ border-left: 4px solid #ff3333;
+ padding-left: 1rem;
+ font-style: italic;
+ color: #ccc;
+ margin: 1.5rem 0;
+ }
+ /* FAQ 섹션 */
+ .faq {
+ padding: 3rem 0;
+ background: #0f0f0f;
+ }
+ .faq-item {
+ border-bottom: 1px solid #222;
+ padding: 1.5rem 0;
+ }
+ .faq-item h3 {
+ font-size: 1.3rem;
+ cursor: pointer;
+ color: #ff6666;
+ }
+ .faq-item p {
+ margin-top: 0.5rem;
+ }
+ /* 푸터 */
+ footer {
+ background: #111;
+ border-top: 2px solid #ff3333;
+ padding: 2rem 1.5rem;
+ text-align: center;
+ font-size: 0.9rem;
+ }
+ footer .tel-link {
+ display: inline-block;
+ margin-top: 0.5rem;
+ font-size: 1.2rem;
+ color: #ff3333;
+ font-weight: 900;
+ }
+ /* 반응형 여백 */
+ @media (max-width: 768px) {
+ .container {
+ padding: 0 1rem;
+ }
+ .post {
+ padding: 1rem;
+ }
+ }
+ </style>
   <meta name="twitter:card" content="summary">
 </head>
 <body>
@@ -272,7 +270,7 @@
 </div>
 </div>
 </div>
-<p>문의: <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></p>
+<p>문의: </p>
 </main>
 
 
